@@ -1,0 +1,70 @@
+.banner
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+
+    .banner-highlights
+    {
+        background-color: rgba(0,0,0,0.7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .content
+    {
+        max-width: 900px;
+        text-align: center;
+
+        h1
+        {
+            font-size: 5em;
+            color: #fff;
+
+            span 
+            {
+                color: $primary-color;
+            }
+        }
+
+        p 
+        {
+            font-size: 1.1em;
+            color: #fff;
+            padding: 0 10%;
+            margin-bottom: 7.5vh;
+        }
+    }
+}
+
+.btn-custom
+{
+    padding: 10px 25px 10px 25px;
+    margin-top: 10px;
+    border-radius: 30px;
+    border: 2px solid $primary-color;
+    background-color: transparent;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+
+    &:focus
+    {
+        box-shadow: none;
+    }
+
+    &:hover
+    {
+        border: 2px solid $primary-color;
+        background-color: $primary-color;
+        color: #fff;
+        transition: 1s;
+    }
+}
+
+    

@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+     <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+
+    <!-- Font-awesome -->
+    <script src="https://kit.fontawesome.com/1ec278ba68.js"></script>
+
+    <!--animate.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+    <!------------------------------------------------ header -------------------------------------------------->
+    <header class="header">
+        <nav class="navbar">
+
+            <!------------------------------------------ mobile-menu --------------------------------------------------->
+            <ul class="mobile-menu">
+              <li>
+                <div class="menu-icon">
+                    <i class="fa-solid fa-xmark"></i>
+                    <i class="fa-solid fa-bars"></i>
+                </div><!-- end menu-icon -->
+              </li>
+
+               <li><a href="index.html" class="logo"><img src="img/logo.png"></a></li>
+               <li><a href="#" class="cart"><i class="fa-solid fa-cart-plus"></i></a></li></li>
+            </ul>
+
+            <!------------------------------------------ menu --------------------------------------------------->
+
+            <ul class="menu">
+                <li><a href="index.html" class="logo"><img src="img/logo.png"></a></li>
+                <li><a href="#">Chi siamo</a></li>
+                <li><a href="#">Prodotti</a></li>
+                <li><a href="#">Statistiche</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contatti</a></li>
+                <li><a href="#" id="search"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <li><a href="#" id="cart"><i class="fa-solid fa-cart-plus"></i></a></li>
+            </ul>
+        </nav>
+
+
+        <!-------------------------------------------- search-container -------------------------------------------->
+
+        <div class="search-container hide">
+            <a href="#" id="search"><i class="fa-solid fa-magnifying-glass"></i></a>
+
+            <div class="search-bar">
+                <form>
+                    <input type="text" placeholder="Cerca">
+                </form>
+            </div><!-- end div.search-bar -->
+
+            <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+
+            <div class="quick-links">
+                <h2>Suggerimenti utili</h2>
+        
+                <ul>
+                <li><a href="#">DC comics</a></li>
+                <li><a href="#">Marvel comics</a></li>
+                <li><a href="#">Dark Horse</a></li>
+                <li><a href="#">Image comics</a></li>
+                <li><a href="#">Disney comics</a></li>
+                </ul>
+            </div><!-- end div.quick-links -->
+        </div><!-- end div.search-container -->
+
+        
+        <!-------------------------------------------- mobile-search-container ------------------------------------------>
+
+
+        <div class="mobile-search-container">
+            <a href="#" id="search"><i class="fa-solid fa-magnifying-glass"></i></a>
+
+            <div class="search-bar">
+                <form>
+                    <input type="text" placeholder="Cerca">
+                </form>
+            </div><!-- end div.search-bar -->
+
+            <span class="cancel-btn">Annulla</span>
+
+            <div class="quick-links">
+                <h2>Suggerimenti utili</h2>
+        
+                <ul>
+                <li><a href="#">DC comics</a></li>
+                <li><a href="#">Marvel comics</a></li>
+                <li><a href="#">Dark Horse</a></li>
+                <li><a href="#">Image comics</a></li>
+                <li><a href="#">Disney comics</a></li>
+                </ul>
+            </div><!-- end div.quick-links -->
+        </div><!-- end div.mobile-search-container -->
+    </header>
+
+    <!-------------------------------------------- overlay -------------------------------------------->
+
+    <div class="overlay"></div>
+
+
+    <!-------------------------------------------- banner -------------------------------------------->
+
+
+    <section class="banner">
+        <div class="banner-highlights">
+            <div class="content">
+                <h1>I migliori fumetti <span class="auto-type">di sempre</span></h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Tenetur beatae harum omnis eaque, dolorem culpa debitis impedit.
+                </p>
+                <a href="#" class="btn-custom">Sfoglia</a>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!------------------------------------------  highlighted product --------------------------------------------------->
+
+
+    <section class="highlighted-product">
+        <div class="container">
+           <div class="highlighted-box">
+              <h2 class="title text-center">Prodotti in evidenza</h2>
+
+              <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="highlighted-img">
+                      <img src="img/highlighted-img1.png" alt="c' è un problema nella visualizzazione dell' immagine">
+                      <button type="button" class="btn-buy">Acquista ora</button>
+
+                      <div class="highlighted-overlay"></div>
+
+                      <div class="overlay-right">
+                        <button type="button" class="btn btn-secondary" title="Aggiungi al carrello">
+                          <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                      </div><!-- end div.overlay-right-->
+                    </div><!-- end div.highlighted-img -->
+
+                    <a href="product-details.html"><h4>L' ultima caccia di Kraven</h4></a>
+
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+
+                    <p>€40.00</p>
+                </div>
+
+                <div class="col-lg-3 col-sm-6">
+                    <div class="highlighted-img">
+                        <img src="img/highlighted-img2.png" alt="c' è un problema nella visualizzazione dell' immagine">
+                        <button type="button" class="btn-buy">Acquista ora</button>
+
+                        <div class="highlighted-overlay"></div>
+
+                        <div class="overlay-right">
+                          <button type="button" class="btn btn-secondary" title="Aggiungi al carrello">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                          </button>
+                        </div><!-- end div.overlay-right-->
+                    </div><!-- end div.highlighted-img -->
+
+                    <a href="product-details.html"><h4>La morte di Superman</h4></a>
+
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+
+                    <p>€100.00</p>
+                </div>
+
+                <div class="col-lg-3 col-sm-6">
+                    <div class="highlighted-img">
+                        <img src="img/highlighted-img3.png" alt="c' è un problema nella visualizzazione dell' immagine">
+                        <button type="button" class="btn-buy">Aquista ora</button>
+
+                        <div class="highlighted-overlay"></div>
+
+                        <div class="overlay-right">
+                          <button type="button" class="btn btn-secondary" title="Aggiungi al carrello">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                          </button>
+                        </div><!-- end div.overlay-right-->
+                    </div><!-- end div.highlighted-img -->
+
+                    <a href="product-details.html"><h4>Batman il lungo Halloween</h4></a>
+
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+
+                    <p>€50.00</p>
+                </div>
+
+                <div class="col-lg-3 col-sm-6">
+                    <div class="highlighted-img">
+                        <img src="img/highlighted-img4.png" alt="c' è un problema nella visualizzazione dell' immagine">
+                        <button type="button" class="btn-buy">Acquista ora</button>
+
+                        <div class="highlighted-overlay"></div>
+
+                        <div class="overlay-right">
+                          <button type="button" class="btn btn-secondary" title="Aggiungi al carrello">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                          </button>
+                        </div><!-- end div.overlay-right-->
+                    </div><!-- end div.highlighted-img -->
+
+                    <a href="product-details.html"><h4>Il ritorno di Wolverine</h4></a>
+
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+
+                    <p>€30.00</p>
+                </div>
+             </div>
+           </div><!-- fine div.highlighted-box -->
+        </div><!-- end div.container-fluid -->
+    </section>
+
+
+    <!----------------------------------------------  testimonials --------------------------------------------------->
+
+    <section class="testimonials">
+
+        <div class="swiper mySwiper">
+            <h2 class="title text-center">Recensioni</h2>
+
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="testimonial-box">
+                   <blockquote class="content">
+                      <i class="fa-solid fa-quote-left"></i>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Itaque ipsum vel laudantium quibusdam voluptas temporibus consequatur numquam quia quas sequi ea, 
+                        id at sunt qui doloribus mollitia! Quaerat, praesentium accusantium.
+                      </p>
+                      <i class="fa-solid fa-quote-right"></i>
+                   </blockquote><!-- end div.content -->
+
+                   <div class="details">
+                      <div class="img-box">
+                        <img src="img/img1.png" alt="c' è un problema nella visualizzazione dell' immagine">
+                      </div><!-- end div.img-box -->
+
+                      <h3>John Romita jr<br><span>Fumettista</span></h3>
+                   </div><!-- end div.details -->
+                </div><!-- end div.testimonial-box -->
+              </div><!-- end div.swiper-slide -->
+
+              <div class="swiper-slide">
+                <div class="testimonial-box">
+                   <blockquote class="content">
+                      <i class="fa-solid fa-quote-left"></i>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Itaque ipsum vel laudantium quibusdam voluptas temporibus consequatur numquam quia quas sequi ea, 
+                        id at sunt qui doloribus mollitia! Quaerat, praesentium accusantium.
+                      </p>
+                      <i class="fa-solid fa-quote-right"></i>
+                   </blockquote><!-- end div.content -->
+
+                   <div class="details">
+                      <div class="img-box">
+                        <img src="img/img2.png" alt="c' è un problema nella visualizzazione dell' immagine">
+                      </div><!-- end div.img-box -->
+
+                      <h3>Alan Moore<br><span>Fumettista</span></h3>
+                   </div><!-- end div.details -->
+                </div><!-- end div.testimonial-box -->
+              </div><!-- end div.swiper-slide -->
+
+              <div class="swiper-slide">
+                <div class="testimonial-box">
+                   <blockquote class="content">
+                      <i class="fa-solid fa-quote-left"></i>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Itaque ipsum vel laudantium quibusdam voluptas temporibus consequatur numquam quia quas sequi ea, 
+                        id at sunt qui doloribus mollitia! Quaerat, praesentium accusantium.
+                      </p>
+                      <i class="fa-solid fa-quote-right"></i>
+                   </blockquote><!-- end div.content -->
+
+                   <div class="details">
+                      <div class="img-box">
+                        <img src="img/img3.png" alt="c' è un problema nella visualizzazione dell' immagine">
+                      </div><!-- end div.img-box -->
+
+                      <h3>John Byrne<br><span>Fumettista</span></h3>
+                   </div><!-- end div.details -->
+                </div><!-- end div.testimonial-box -->
+              </div><!-- end div.swiper-slide -->
+
+              <div class="swiper-slide">
+                <div class="testimonial-box">
+                   <blockquote class="content">
+                      <i class="fa-solid fa-quote-left"></i>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Itaque ipsum vel laudantium quibusdam voluptas temporibus consequatur numquam quia quas sequi ea, 
+                        id at sunt qui doloribus mollitia! Quaerat, praesentium accusantium.
+                      </p>
+                      <i class="fa-solid fa-quote-right"></i>
+                   </blockquote><!-- end div.content -->
+
+                   <div class="details">
+                      <div class="img-box">
+                        <img src="img/img4.png" alt="c' è un problema nella visualizzazione dell' immagine">
+                      </div><!-- end div.img-box -->
+
+                      <h3>Frank Miller<br><span>Fumettista</span></h3>
+                   </div><!-- end div.details -->
+                </div><!-- end div.testimonial-box -->
+              </div><!-- end div.swiper-slide -->
+
+              <div class="swiper-slide">
+                <div class="testimonial-box">
+                   <blockquote class="content">
+                      <i class="fa-solid fa-quote-left"></i>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Itaque ipsum vel laudantium quibusdam voluptas temporibus consequatur numquam quia quas sequi ea, 
+                        id at sunt qui doloribus mollitia! Quaerat, praesentium accusantium.
+                      </p>
+                      <i class="fa-solid fa-quote-right"></i>
+                   </blockquote><!-- end div.content -->
+
+                   <div class="details">
+                      <div class="img-box">
+                        <img src="img/img5.png" alt="c' è un problema nella visualizzazione dell' immagine">
+                      </div><!-- end div.img-box -->
+
+                      <h3>Grant Morrison<br><span>Fumettista</span></h3>
+                   </div><!-- end div.details -->
+                </div><!-- end div.testimonial-box -->
+              </div><!-- end div.swiper-slide -->
+
+            </div><!-- end div.swiper-wrapper -->
+        </div><!-- end div.swiper.mySwiper -->
+    </section>
+
+
+    <!----------------------------------------------  newsLetter --------------------------------------------------->
+
+    <section class="news-letter">
+      <div class="container">
+        <h2>Iscriviti alla nostra NewsLetter</h2>
+
+        <form>
+          <input  type="email" placeholder="Inserisci la tua email" required>
+          <button type="submit" class="btn-custom">Iscriviti</button>
+        </form>
+      </div><!-- end div.container -->
+    </section>
+
+
+
+    <!----------------------------------------------  Brands --------------------------------------------------->
+
+    <section class="brands">
+      <div class="container">
+         <div class="row">
+
+            <div class="col-md-2 offset-md-1">
+              <img src="img/brand1.png" alt="c' è un problema nella visualizzazione dell' immagine">
+            </div>
+
+            <div class="col-md-2">
+              <img src="img/brand2.png" alt="c' è un problema nella visualizzazione dell' immagine">
+            </div>
+
+            <div class="col-md-2">
+              <img src="img/brand3.png" alt="c' è un problema nella visualizzazione dell' immagine">
+            </div>
+
+            <div class="col-md-2">
+              <img src="img/brand4.png" alt="c' è un problema nella visualizzazione dell' immagine">
+            </div>
+
+            <div class="col-md-2">
+              <img src="img/brand5.png" alt="c' è un problema nella visualizzazione dell' immagine">
+            </div>
+         </div><!-- end div.row -->
+      </div><!-- end div.container -->
+  </section>
+
+
+  <!----------------------------------------------  Footer --------------------------------------------------->
+  
+  <footer class="footer">
+      <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+              <h3>Scarica la nostra App</h3>
+              <p>Scarica L' app mobile per Android e IOS</p>
+
+              <div class="app-logo">
+                  <img src="img/app-store.png" alt="c' è un problema nella visualizzazione dell' immagine">
+                  <img src="img/play-store.png" alt="c' è un problema nella visualizzazione dell' immagine">
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <img src="img/logo.png" alt="c' è un problema nella visualizzazione dell' immagine">
+              <p>
+                La nostra aspirazione è quella di far arrivare a quante più persone possibili 
+                le opere fumettistiche che sono alla base dei cinecomics che stanno spopolando nei cinema in questi anni.
+              </p>
+            </div>
+
+            <div class="col-6 col-md-2">
+                <h3>Link utili:</h3>
+                <ul>
+                    <li><a href="#">Coupons</a></li>
+                    <li><a href="#">Post del blog</a></li>
+                    <li><a href="#">Politica di rimborso</a></li>
+                    <li><a href="#">Affiliazioni</a></li>
+                </ul>
+            </div>
+
+            <div class="col-6 col-md-2">
+                <h3>Seguici su:</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">You-Tube</a></li>
+                </ul>
+            </div>
+        </div><!-- end div.row -->
+
+        <hr>
+        <p class="copyright">&copy; Comics-shop corporation. Tutti i diritti sono riservati e protetti da copyright</p>
+      </div><!-- end div.container -->
+  </footer>
+
+
+  <!----------------------------------------------  modal-cookie --------------------------------------------------->
+  <div class="modal-cookie animate__animated animate__fadeInUpBig">
+    <div class="container">
+      <img src="img/spiderman-cookies.jpg" alt="c' è un problema nella visualizzazione dell' immagine">
+
+      <div class="modal-content">
+        <h3>Consenti cookie</h3>
+        <p>Questo sito web utilizza i cookie per garantire la migliore esperienza possibile sulla navigazione del nostro sito.</p>
+  
+        <div class="buttons">
+          <button>Ho capito</button>
+          <a href="#">Per saperne di più</a>
+        </div><!-- end div.buttons -->
+      </div><!-- end div.modal-content -->
+    </div><!-- end.div-container -->
+  </div><!-- end div.modal-cookie -->
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- Typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- Bootstrap and Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JS -->
+    <script type="text/javascript" src="JS/toggle-search-container.js"></script>
+    <script type="text/javascript" src="JS/toggle-mobile-search-container.js"></script>
+
+
+    <!-- Initialize Swiper -->
+    <script src="JS/initializer-swiper.js"></script>
+
+    <!-- Initialize typed -->
+    <script src="JS/initialize-typed.js"></script>
+
+    <!-- modal-cookie -->
+    <script src="JS/modal-cookie.js"></script>
+</body>
+</html>

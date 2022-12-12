@@ -1,0 +1,32 @@
+//Più è alto il valore della variabile $speed minore sarà il valore della proprietà transition-delay
+@mixin transition-delay-hide-menu($numero-elementi, $speed) 
+{
+    $i: 1;
+
+    /*
+    L' interpolazione ci permette di concatenare un numero ad una stringa 
+    senza che il risultato abbia le virgolette.
+    */
+    @for $var from 2 through $numero-elementi 
+    {
+        li:nth-child(#{$var})
+        {
+           transition-delay: #{calc(($numero-elementi - $i) / $speed) + "s"};
+           $i: $i + 1;
+        }
+    }
+}
+
+@mixin transition-delay-menu-item($numero-elementi, $speed) 
+{
+    $i: 1;
+
+    @for $var from 2 through $numero-elementi 
+    {
+        li:nth-child(#{$var})
+        {
+           transition-delay: #{calc(($i) / $speed) + "s"};
+           $i: $i + 1;
+        }
+    }
+}

@@ -1,0 +1,140 @@
+@media only screen and (max-width: 1200px)
+{
+    .navbar
+    {
+        width: 100%;
+        padding: 0 32px;
+    }
+}
+
+@media only screen and (max-width: 767px)
+{
+    .header .menu 
+    {
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 0vh;
+        justify-content: start;
+        background-color: $primary-color;
+        overflow: hidden;
+        z-index: -1;
+        transition: all 1s ease;
+    }
+
+    .header.active .menu
+    {
+        height: 100vh;
+    }
+
+    .header .menu li 
+    {
+       width: 100%;
+       padding: 0 32px;
+
+       &:first-child
+       {
+          margin-top: 120px;
+       }
+    }
+
+    .header .menu .logo,
+    .header .menu #search,
+    .header .menu #cart
+    {
+       display: none;
+    }
+
+    .header .menu li a 
+    {
+        padding: 16px 0;
+        display: inline-block;
+        border-bottom: 1px solid #fff;
+        width: 100%;
+        transform: translateY(-80px);
+        opacity: 0;
+        transition: all 0.75s ease;
+    }
+
+    .header.active .menu li a 
+    {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    .navbar .mobile-menu 
+    {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        list-style-type: none;
+    }
+
+    .navbar .menu-icon
+    {
+        position: relative;
+    }
+
+    .navbar .fa-bars,
+    .navbar .fa-xmark
+    {
+        position: absolute;
+        left: -25px;
+        top: 10px;
+        transform: translateX(-50%);
+        font-size: 25px;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .header .navbar .menu-icon .fa-xmark
+    {
+        display: none;
+    }
+
+    .header.active .navbar .menu-icon .fa-xmark
+    {
+       display: inline;
+    }
+
+    .header.active .navbar .menu-icon .fa-bars
+    {
+        display: none;
+    }
+
+    .mobile-menu .logo img
+    {
+        width: 82px;
+    }
+
+    .mobile-menu .fa-cart-plus
+    {
+        color: #fff;
+        margin-top: 15px;
+    }
+
+
+    //cart icon animation
+
+    .header.active .mobile-menu .cart 
+    {
+        transform: translateY(8px);
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .header .mobile-menu .cart 
+    {
+        transition: all 1s ease;
+    }
+
+
+    //nav animation
+
+    .header .navbar
+    {
+        transition: all 0.5s ease;
+    }
+}

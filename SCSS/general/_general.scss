@@ -1,0 +1,20 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'comics sans', sans-serif;
+}
+
+body 
+{
+    //anche se si apre una finestra di dialogo con questa proprietà la barra di scrorrimento rimane attiva.
+    overflow-y: scroll;
+}
+
+.title 
+{
+    color: $primary-color;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 2.5em;
+}

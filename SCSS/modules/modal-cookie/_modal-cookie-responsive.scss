@@ -1,0 +1,56 @@
+@media only screen and (max-width: 767px)
+{
+    .modal-cookie
+    {
+        top: calc($nav-height + 10px);
+        bottom: 10px;
+        left: 0;
+
+        .modal-content
+        {
+            p 
+            {
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+
+        .buttons button,
+        .buttons a
+        {
+            font-size: 12px;
+        }
+    }
+}
+
+@media only screen and (max-width: 450px)
+{
+    .modal-cookie
+    {
+        margin: 0 10%;
+    }
+}
+
+@media only screen and (min-width: 451px) and (max-width: 574px)
+{
+    .modal-cookie
+    {
+        margin: 0 13%;
+    }
+}
+
+@media only screen and (min-width: 575px) and (max-width: 767px)
+{
+    .modal-cookie
+    {
+        left: 25%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px)
+{
+    .modal-cookie
+    {
+        left: 35%;
+    }
+}

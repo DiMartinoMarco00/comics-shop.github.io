@@ -1,0 +1,115 @@
+@media only screen and (max-width: 767px)
+{
+    .mobile-search-container
+    {
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin-top: -30px;
+        padding: 0 16px 16px 16px;
+        border-bottom: 1px solid #fff;
+        transform: rotateX(90deg);
+        opacity: 0;
+        transition: all 0.5s ease;
+    }
+
+    .header.active .mobile-search-container
+    {
+        transform: rotateX(0deg);
+        margin-top: 10px;
+        opacity: 1;
+    }
+
+    .mobile-search-container input 
+    {
+        width: 100%;
+        padding: 6px 36px;
+        font-size: 1.1em;
+        background-color: #fff;
+        color: $primary-color;
+        border: none;
+        outline: none;
+        border-radius: 8px;
+    }
+
+    .mobile-search-container #search
+    {
+        position: absolute;
+        top: 8px;
+        left: 24px;
+        color: $primary-color;
+        opacity: 0.5;
+        font-size: 15px;
+    }
+
+    .mobile-search-container .cancel-btn
+    {
+        display: none;
+        color: #2997ff;
+        font-size: 1.1em;
+        padding: 0 16px;
+        cursor: pointer;
+    }
+
+    .mobile-search-container .search-bar.active + .cancel-btn
+    {
+        display: inline;
+    }
+
+    .mobile-search-container .search-bar 
+    {
+        flex: 1;
+    }
+
+    .mobile-search-container .search-bar.active ~ .quick-links
+    {
+        top: 80px;
+        opacity: 1;
+        pointer-events: all;
+        transition-delay: 1s;
+    }
+
+    .mobile-search-container .quick-links
+    {
+        position: absolute;
+        top: 10px;
+        left: 0;
+        right: 0;
+        padding: 0 32px;
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.5s ease;
+
+        ul{list-style-type: none;}
+
+        h2 
+        {
+            color: #fff;
+            opacity: 0.75;
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+    }
+
+    .mobile-search-container .quick-links ul li a 
+    {
+        padding: 16px 0;
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        font-size: 14px;
+        border-bottom: 1px solid #fff;
+        width: 100%;
+
+        &:hover 
+        {
+            color: #2997ff;
+        }
+    }
+}
+
+.mobile-search-container .search-bar input::placeholder
+{
+    color: $primary-color;
+    opacity: 0.5;
+}

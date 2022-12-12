@@ -1,0 +1,72 @@
+.modal-cookie
+{
+    position: fixed;
+    bottom: 30px;
+    left: 40%;
+    background-color: #fff;
+    max-width: 365px;
+    border-radius: 20px;
+    text-align: center;
+    padding: 25px 25px 30px 25px;
+    --animate-duration: 2s;
+
+    &.hide
+    {
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+    }
+
+    img 
+    {
+        max-width: 90px;
+    }
+
+    .modal-content
+    {
+        margin-top: 10px;
+
+        h3 
+        {
+            font-size: 25px;
+            font-weight: 600;
+        }
+
+        p 
+        {
+            margin: 10px 0 20px 0;
+            font-size: 18px;
+            line-height: 25px;
+        }
+
+        .buttons 
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+    }//fine .modal-content
+}//fine modal-cookie
+
+
+.buttons button 
+{
+    padding: 10px 20px;
+    background-color: red;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.buttons a 
+{
+    color: red;
+    text-decoration: none;
+    margin: 0 10px;
+}
